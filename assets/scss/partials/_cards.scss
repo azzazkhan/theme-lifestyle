@@ -1,0 +1,76 @@
+.cards-wrapper {
+	padding: 0;
+	margin: 40px -15px 0 !important;
+	.card-wrapper {
+		padding: 10px;
+		&.col-3 {
+			.card-header .title-wrapper { min-width: 60% !important; }
+			.post-card { min-height: 320px; }
+		}
+		&.pull-up .post-card { top: -60px; }
+		.post-card {
+			position: relative;
+			padding: 10px 20px;
+			min-height: 260px;
+			border-radius: 10px;
+			@include box-shadow(0, 20px, 30px, -25px);
+			@include transition(box-shadow, .2s);
+			&:hover {
+				@include box-shadow(0, 20px, 30px, -20px, rgba(0, 0, 0, 0.70));
+			}
+			
+			.card-header {
+				background: transparent !important;
+				padding: 0;
+				border: 0;
+				.category-wrapper {
+					.category {
+						color: #BEBEBE;
+						font-size: 11px;
+						font-weight: bold;
+						text-transform: uppercase;
+						margin: 0 5px 0 0;
+						&:last-of-type {
+							margin-right: 0 !important;
+						}
+					}
+				}
+				.title-wrapper {
+					padding: 0;
+					max-width: 50%;
+					margin-top: 5px;
+					.card-title {
+						font-size: 22px;
+						line-height: 1.2em;
+						color: white;
+						font-weight: bolder;
+						@include text-shadow(1px, 1px, 2px);
+					}
+				}
+			}
+			.card-footer {
+				background: transparent !important;
+				padding: 0;
+				position: absolute;
+				bottom: 10px;
+				width: 90%;
+				border: 0;
+				.action-wrapper {
+					padding: 10px 0;
+					.read-button {
+						color: black;
+						background: #F1F1F1;
+						font-weight: bold;
+						display: inline-block;
+						padding: 7px 15px;
+						border-radius: 4px;
+						@include box-shadow(0, 0, 8px, 0);
+						&:hover {
+							background: #FAFAFA;
+						}
+					}
+				}
+			}
+		}
+	}
+}

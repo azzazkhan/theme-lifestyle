@@ -1,0 +1,16 @@
+.site-content {
+	width: 80%;
+	margin: 40px auto 0;
+	.caption-wrapper {
+		.entry-title {
+			font-size: 32px;
+			font-weight: bold;
+		}
+		.entry-description {
+			color: #6E6E6E;
+			font-size: 14px;
+			max-width: 40%;
+			padding: 0;
+		}
+	}
+}
